@@ -1,0 +1,6 @@
+# May be used for linux or os-x x86-64 builds
+
+from cerbero.config import Architecture
+
+target_arch=Architecture.X86_64
+allow_parallel_build=True
