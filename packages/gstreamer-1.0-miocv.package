@@ -13,7 +13,7 @@ class SDKPackage(custom.GStreamer, package.SDKPackage):
     packages =[
                # (name, required, selected)
                ('base-system-1.0', True, True),
-               ('gstreamer-1.0-core', True, True),
+               ('gstreamer-1.0-core-disabled-registry', True, True),
                ('gstreamer-1.0-playback', False, True),
                ('gstreamer-1.0-codecs', False, True),
                ('gstreamer-1.0-codecs-gpl', False, True),
