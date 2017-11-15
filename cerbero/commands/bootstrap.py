@@ -29,10 +29,17 @@ class Bootstrap(Command):
     def __init__(self):
         args = [
             ArgparseArgument('--build-tools-only', action='store_true',
-                default=False, help=_('only bootstrap the build tools'))]
+                default=False, help=_('only bootstrap the build tools')),
+            ArgparseArgument('--apt-no-sudo', action='store_true',
+                             default=False, help=_('do not use sudo when calling apt-get')),
+            ArgparseArgument('--apt-yes', action='store_true',
+                             default=False, help=_('pass the -y flag to apt-get install'))
+        ]
         Command.__init__(self, args)
 
     def run(self, config, args):
+        config.apt_yes = args.apt_yes
+        config.apt_no_sudo = args.apt_no_sudo
         bootstrappers = Bootstrapper(config, args.build_tools_only)
         for bootstrapper in bootstrappers:
             bootstrapper.start()

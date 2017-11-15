@@ -85,6 +85,11 @@ class DebianBootstrapper (UnixBootstrapper):
         if self.config.distro_version in [DistroVersion.UBUNTU_LUCID]:
             self.packages.remove('autopoint')
 
+        if self.config.apt_yes:
+            self.tool = self.tool.replace('install', 'install -y')
+        if self.config.apt_no_sudo:
+            self.tool = self.tool.replace('sudo apt-get', 'apt-get')
+
     def create_debian_arch_check(self, arch):
         def check_arch():
             native_arch = shell.check_call('dpkg --print-architecture')
