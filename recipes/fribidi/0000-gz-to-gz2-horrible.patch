@@ -4,7 +4,6 @@ Date: Thu, 16 Nov 2017 09:36:30 -0500
 Subject: [PATCH] gz2
 
 ---
- .DS_Store                                  |   Bin 6148 -> 6148 bytes
  ChangeLog                                  |  2259 ++++
  HACKING                                    |     2 -
  HISTORY                                    |    34 -
@@ -54,7 +53,6 @@ Subject: [PATCH] gz2
  doc/fribidi_unicode_to_charset.3           |    95 +
  doc/fribidi_unicode_version.3              |     0
  doc/fribidi_version_info.3                 |     0
- gen.tab/.DS_Store                          |   Bin 6148 -> 6148 bytes
  gen.tab/.cvsignore                         |     3 -
  gen.tab/Makefile.in                        |   741 ++
  gen.tab/gen-arabic-liga.sh                 |     9 -
@@ -147,26 +145,6 @@ Subject: [PATCH] gz2
  create mode 100755 missing
  create mode 100755 test-driver
  create mode 100644 test/Makefile.in
-
-diff --git a/.DS_Store b/.DS_Store
-index 1bbb96328f69592117c6e631bb453a278ac4aeea..d06a6072ddf258181cd76c061d3b38fa88d68382 100644
-GIT binary patch
-delta 128
-zcmZoMXfc=|#>CJ*F;Q%yo+2a5!~knXmdQLUl9udIybKHsEDU-K=?s|+CAs-7E-9rY
-z$qWqFjDz+8Wl-c&kmM%Eu}CxV9@s3%A;z+?;2YCsb`E|HpcO!Y@640=MGP4kCfo2x
-KZ;laJ!3+Sz4<I1`
-
-literal 6148
-zcmeHKJx{|h5Ir{$tzhX?fy9snMx+YF992b#mBJ29s}`wWf_8u@|AU>GiJ4!3=)!;C
-zU+~U0ah;?qLe-sQztnf<mwRsQnut_u(Q6XbiKvFg7;d90G4^vSSjCR)0~OCP8Z<k}
-zbUZ6W%77>!3j9X}__rI<5e?{$=Kk;Z`fb%Wp0?Y)#XKSUI=+0-rDS>IX>YA>HeA^g
-z6z?+>P#0_yk4+tXIFI96em@;*E}P?+@*bb(m6NKJ(2#EFo*t;5uWrd(S}vl5w-E7L
-zX~v(6@ZTfm_Xwy*Q%bygY3ssyN_cHfX}x+jkB1`WsbUrTG{I`lQFYhjYn<;DBOEW*
-z^pU5?&*AvjMR@Pg_~bbP8ex5X{>t-}^Elp2MVsUJ@*a;TcxRpvb@s8gx$o`i$*Qk}
-zE6Xck%X}UmX+GxMB*U4_R@*Tsy(l0Ghys}cygx)}jIqVkpx!#r=_>#*#IQCz>oXo0
-z@c=Nkm>R?gOqo=mNmcfWp-ei)BO4c6ObwcJQugwpEVHsV6!Q-Q^G7<IRBTXsQ9u;%
-z6$s47I-mb%>+k=5l6(>cM1hS`K!xp2yM>bM*;*)$&)Nv>291s5QiD1Lojs2A10Th^
-bXxiY5_yHJOObucLCVvF94AO}Lf2zO_OU1pm
 
 diff --git a/ChangeLog b/ChangeLog
 new file mode 100644
@@ -31246,14 +31224,6 @@ index 0000000..e69de29
 diff --git a/doc/fribidi_version_info.3 b/doc/fribidi_version_info.3
 new file mode 100644
 index 0000000..e69de29
-diff --git a/gen.tab/.DS_Store b/gen.tab/.DS_Store
-index 9658348b8be7320f19faa73d50f2c6cd1ef59849..e2a3944ab7dd705cc9ad09e8980e111b17aff08f 100644
-GIT binary patch
-delta 35
-pcmZoMXffE}&B*+$!C`U%qX=Jaeu_&<X-P5z!$qLb<^skkVgTRf46OhF
-
-delta 35
-pcmZoMXffE}&B*++N^NohqX=Jaeu_&<X-P5z!$qLb<^skkVgTG@408Yg
 
 diff --git a/gen.tab/.cvsignore b/gen.tab/.cvsignore
 deleted file mode 100644
